@@ -7,12 +7,11 @@ public class Pemilihan2Percobaan120 {
         int tahun = sc20.nextInt();
         
         System.out.println("Tahun yang dimasukkan adalah: " + tahun);
-        if ((tahun % 4) == 0) {
-            if ((tahun % 100) != 0);
-            System.out.println("Tahun Kabisat");
-
+        if ((tahun % 4 == 0 && tahun % 100 != 0) || (tahun % 400 == 0)) {
+            System.out.println(tahun + "adalah tahun kabinet.");
         } else
-            System.out.println("Bukan Tahun Kabisat");
+            System.out.println(tahun + "Bukan Tahun Kabisat.");
     }
+
     
 }
